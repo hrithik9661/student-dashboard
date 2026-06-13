@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LearnX Dashboard
 
-## Getting Started
+LearnX Dashboard is a modern educational dashboard built using Next.js, TypeScript, Tailwind CSS, Framer Motion, and Supabase.
 
-First, run the development server:
+Features
 
-```bash
+Responsive Bento Grid Layout
+
+Dynamic Course Cards
+
+Supabase Database Integration
+
+Server-Side Data Fetching
+
+Animated Progress Bars
+
+Collapsible Sidebar
+
+Sidebar Active Item Animation
+
+Staggered Page Load Animations
+
+Hover Effects with Spring Physics
+
+Tech Stack
+
+Next.js
+
+TypeScript
+
+Tailwind CSS
+
+Framer Motion
+
+Supabase
+
+Lucide React
+
+Environment Variables
+
+Create a `.env.local` file in the project root.
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+Installation
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the application at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Database Table
 
-## Learn More
+Table Name: courses
 
-To learn more about Next.js, take a look at the following resources:
+Columns:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+id
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+title
 
-## Deploy on Vercel
+progress
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+icon_name
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sample Data
+
+insert into courses (title, progress, icon_name)
+values
+('Advanced React Patterns',75,'Code'),
+('Next.js Mastery',50,'Rocket'),
+('TypeScript Pro',90,'FileCode'),
+('Database Design',35,'Database');
+
+Assignment Requirements Covered
+
+Responsive Layout
+
+Dynamic Data Rendering
+
+Supabase Integration
+
+Server Components
+
+Framer Motion Animations
+
+Loading State
+
+Error State
+
+TypeScript Support
+
+Author
+
+Hrithik kumar
